@@ -59,26 +59,6 @@ namespace TechChallengue.Controllers
         }
 
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> CreateSecond([Bind("Id,Name")] Player player)
-        //{
-
-        //    if (ModelState.IsValid)
-        //    {
-        //        _context.Add(player);
-        //        await _context.SaveChangesAsync();
-        //        return RedirectToAction(nameof(FirstMove));
-        //    }
-        //    return View(player);
-        //}
-        ////First Player move
-
-
-
-
-
-
         // GET: Players/FirstMove
         public IActionResult FirstMove()
         {
