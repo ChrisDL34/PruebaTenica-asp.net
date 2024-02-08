@@ -26,6 +26,8 @@ Imagen con procesos:
 ![image](https://github.com/ChrisDL34/PruebaTenica-asp.net/assets/128629521/29121bd0-365f-4052-b972-6cfc0f3af2ee)
 
 ![image](https://github.com/ChrisDL34/PruebaTenica-asp.net/assets/128629521/e970c6a9-c9fa-412b-9c19-98747f7b9b83)
+Cuando un jugador logra ganar las 3 veces el juego finaliza y le permite iniciar desde el principio.
+![image](https://github.com/ChrisDL34/PruebaTenica-asp.net/assets/128629521/80236f1b-01c4-4378-9c96-d1b82bc48500)
 
 
 
