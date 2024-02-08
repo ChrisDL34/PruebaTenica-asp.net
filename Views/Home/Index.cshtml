@@ -1,0 +1,60 @@
+﻿@model TechChallengue.Models.Players
+
+@{
+    ViewData["Title"] = "Game";
+}
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightgray;
+    }
+   
+
+</style>
+    
+
+
+
+<div class="container text-center">
+    <h1 class="display-3 first-title">Registro de Jugadores</h1>
+    <p class="first-subtitule">Juego de Piedra, Papel o Tijera</p>
+</div>
+
+<div class="container d-flex justify-content-center ">
+    <div class="col-md-4 mb-4">
+        
+            <h3 class="titulo text-center">Nombre jugador 1</h3>
+
+            <form asp-controller="Players" asp-action="CreatePlayer" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+
+                <input asp-for="player1.Name" class="form-control  input-registro" maxlength="20" />
+                    <span asp-validation-for="player1.Name" class="text-danger"></span>
+                </div>
+            <h3 class="titulo text-center">Nombre jugador 2</h3>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="player2.Name" class="form-control input-registro" maxlength="20" />
+                <span asp-validation-for="player2.Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group text-center">
+                <input type="submit" value="Registrar Jugadores" class="register-input" />
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

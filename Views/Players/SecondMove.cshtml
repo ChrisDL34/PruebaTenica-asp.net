@@ -1,0 +1,29 @@
+﻿@model TechChallengue.Models.Player
+
+@{
+    ViewData["Title"] = "Second Player";
+}
+
+<div class="container text-center">
+    <h1 class="display-4 first-title">Elije tu movimiento Jugador:</h1>
+    <h1 class="display-4 second-title">@ViewData["SecondPlayerName"]  </h1>
+    <p class="first-subtitule">Juego De Piedra, Papel o Tijera</p>
+</div>
+
+<div class="container d-flex justify-content-center text-center">
+    <div class="col-md-4 mb-4 text-center">
+        <form method="post" asp-action="SecondMove" asp-controller="Players">
+            <input type="hidden" name="playerId" value="@ViewData["SecondPlayerId"]" />
+            <button type="submit" name="moveType" value="Rock" class="btn btn-primary boton-eleccion">Piedra</button>
+            <button type="submit" name="moveType" value="Paper" class="btn btn-primary boton-eleccion">Papel</button>
+            <button type="submit" name="moveType" value="Scissors" class="btn btn-primary boton-eleccion">Tijera</button>
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

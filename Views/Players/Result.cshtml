@@ -1,0 +1,100 @@
+﻿@model TechChallengue.Models.Player
+
+@{
+    ViewData["Title"] = "Results";
+}
+
+<div class="container text-center">
+    <p class="display-4 first-title"> GANADOR DE LA RONDA : </p>
+    <p class="display-4 second-title"><strong>@ViewData["Winner"]</strong></p>
+    <!--
+    <h1 class="display-4"> @ViewData["FirstPlayerName"] Jugó @ViewData["LastMoveFP"]  @ViewData["SecondPlayerName"] jugó @ViewData["LastMoveSP"] </h1>
+    -->
+
+    <p class="first-subtitule">Juego De Piedra, Papel o Tijera</p>
+</div>
+
+<div class="container d-flex justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h3 class="card-title texto-1">Puntos hasta ahora:</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="card-text">Jugador <strong class="jugador">@ViewData["FirstPlayerName"]</strong>= @ViewData["FirstPlayerScore"]</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="card-text">Jugador <strong class="jugador">@ViewData["SecondPlayerName"]</strong>= @ViewData["SecondPlayerScore"]</p>
+                    </div>
+                </div>
+
+                <hr>
+
+
+                <h3 class="card-title texto-1">Detalles de la ronda : </h3>
+                <div class="row">
+ 
+
+                    <div class="col-md-6">
+                        @{
+                            string firstPlayerName = ViewData["FirstPlayerName"].ToString();
+                            string lastMoveFP = ViewData["LastMoveFP"].ToString();
+
+                            if (lastMoveFP == "Rock") { lastMoveFP = "Piedra"; }
+                            else if (lastMoveFP == "Paper") { lastMoveFP = "Papel"; }
+                            else if (lastMoveFP == "Scissors") { lastMoveFP = "Tijera"; }
+
+                        }
+
+                        <p class="card-text">@firstPlayerName Jugó @lastMoveFP</p>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        @{
+                            string secondPlayerName = ViewData["SecondPlayerName"].ToString();
+                            string lastMoveSP = ViewData["LastMoveSP"].ToString();
+
+                            if (lastMoveSP == "Rock") { lastMoveSP = "Piedra"; }
+                            else if (lastMoveSP == "Paper") { lastMoveSP = "Papel"; }
+                            else if (lastMoveSP == "Scissors") { lastMoveSP = "Tijera"; }
+
+                        }
+
+                        <p class="card-text">@secondPlayerName Jugó @lastMoveSP</p>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <hr>
+
+                <h4 class="card-title texto-2">Reglas y distribución de puntos</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Empate = 0 puntos</li>
+                    <li class="list-group-item">Victoria = 1 punto</li>
+                    <li class="list-group-item">El  juego se gana al completar 3 puntos</li>
+                </ul>
+
+                <hr>
+
+                <a href="@Url.Action("FirstMove", "Players")" class="btn btn-primary btn-lg btn-block nueva-ronda">Nueva Ronda</a>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

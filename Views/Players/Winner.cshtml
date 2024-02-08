@@ -1,0 +1,21 @@
+﻿@model TechChallengue.Models.Player
+
+@{
+    ViewData["Title"] = "Results";
+}
+
+<div class="container text-center">
+    <p class="display-4 first-title"> GANADOR DE LA PARTIDA : </p>
+    <p class="display-4 second-title"><strong>@ViewData["Winner"]</strong></p>
+    
+    <p class="first-subtitule">Juego De Piedra, Papel o Tijera</p>
+</div>
+
+<div class="align-content-center text-center">
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg btn-block boton-jugar">JUGAR DE NUEVO </a>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

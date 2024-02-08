@@ -1,0 +1,89 @@
+
+a.navbar-brand[b-3cx99ypbec] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-3cx99ypbec] {
+  color: #0077cc;
+}
+
+.btn-primary[b-3cx99ypbec] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-3cx99ypbec], .nav-pills .show > .nav-link[b-3cx99ypbec] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-3cx99ypbec] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-3cx99ypbec] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-3cx99ypbec] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-3cx99ypbec] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+
+
+
+
+.navbar-brand[b-3cx99ypbec] {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    animation: colorChange-b-3cx99ypbec 2s infinite alternate;
+}
+
+
+@keyframes colorChange-b-3cx99ypbec {
+    0% {
+        color: #ff4500; /* Primer color, cámbialo según tus preferencias */
+    }
+
+    50% {
+        color: #007bff; /* Segundo color, cámbialo según tus preferencias */
+    }
+
+    100% {
+        color: #ff4500; /* Vuelve al primer color al final de la animación */
+    }
+}
+
+footer[b-3cx99ypbec] {
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f8f9fa; 
+}
+
+.footer[b-3cx99ypbec] {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main[b-3cx99ypbec] {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
