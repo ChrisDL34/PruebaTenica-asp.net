@@ -22,7 +22,10 @@ Arquitectura MVC Simple
 Modelo (Model): Representa las entidades de datos y la lógica de negocio.
 Vista (View): Utiliza Razor para definir la presentación y la interfaz de usuario.
 Controlador (Controller): Gestiona las interacciones del usuario, procesa la lógica del juego y actualiza el modelo.
+Imagen con procesos: 
+![image](https://github.com/ChrisDL34/PruebaTenica-asp.net/assets/128629521/29121bd0-365f-4052-b972-6cfc0f3af2ee)
 
+![image](https://github.com/ChrisDL34/PruebaTenica-asp.net/assets/128629521/e970c6a9-c9fa-412b-9c19-98747f7b9b83)
 
 
 
