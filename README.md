@@ -1,7 +1,7 @@
 Video de 30 segundos mostrando el funcionamiento del proyecto 
 https://drive.google.com/file/d/10X_zLaKKni64q8b06skFp2s8mmkWQIu5/view?usp=sharing
 
-Este proyecto implementa el clásico juego de Piedra, Papel o Tijera en ASP.NET MVC, siguiendo una arquitectura simple de Modelo-Vista-Controlador (MVC). Las vistas se crean en Razor, y los datos se almacenan en SQL Server.
+Este proyecto implementa el clásico juego de Piedra, Papel o Tijera en ASP.NET MVC, siguiendo una arquitectura simple de Modelo-Vista-Controlador (MVC). Las vistas se crean en Razor,css,bootstrap y los datos se almacenan en SQL Server.
 
 Funcionalidades: 
 Permite la Creacion de jugadores, Luego Proporciona los nombres de los jugadores y Permite la realizacion de movimientos por cada jugador.
